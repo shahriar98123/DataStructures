@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1065FF1E21FF8BB8002D7E58 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1065FF1D21FF8BB8002D7E58 /* main.cpp */; };
 		1065FF2621FF8C13002D7E58 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1065FF2421FF8C13002D7E58 /* Controller.cpp */; };
 		1065FF2821FF8C25002D7E58 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1065FF2721FF8C25002D7E58 /* Runner.cpp */; };
 /* End PBXBuildFile section */
@@ -26,10 +25,10 @@
 
 /* Begin PBXFileReference section */
 		1065FF1A21FF8BB8002D7E58 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
-		1065FF1D21FF8BB8002D7E58 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1065FF2421FF8C13002D7E58 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		1065FF2521FF8C13002D7E58 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		1065FF2721FF8C25002D7E58 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		1065FF2C21FF916E002D7E58 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +45,6 @@
 		1065FF1121FF8BB8002D7E58 = {
 			isa = PBXGroup;
 			children = (
-				1065FF2721FF8C25002D7E58 /* Runner.cpp */,
-				1065FF2421FF8C13002D7E58 /* Controller.cpp */,
-				1065FF2521FF8C13002D7E58 /* Controller.hpp */,
 				1065FF1C21FF8BB8002D7E58 /* DataStructures */,
 				1065FF1B21FF8BB8002D7E58 /* Products */,
 			);
@@ -65,7 +61,6 @@
 		1065FF1C21FF8BB8002D7E58 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				1065FF1D21FF8BB8002D7E58 /* main.cpp */,
 				1065FF2B21FF8C5C002D7E58 /* Resources */,
 				1065FF2A21FF8C52002D7E58 /* Controller */,
 				1065FF2921FF8C3F002D7E58 /* Model */,
@@ -76,6 +71,7 @@
 		1065FF2921FF8C3F002D7E58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1065FF2C21FF916E002D7E58 /* Node.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,6 +79,9 @@
 		1065FF2A21FF8C52002D7E58 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1065FF2521FF8C13002D7E58 /* Controller.hpp */,
+				1065FF2421FF8C13002D7E58 /* Controller.cpp */,
+				1065FF2721FF8C25002D7E58 /* Runner.cpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1065FF2821FF8C25002D7E58 /* Runner.cpp in Sources */,
-				1065FF1E21FF8BB8002D7E58 /* main.cpp in Sources */,
 				1065FF2621FF8C13002D7E58 /* Controller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
