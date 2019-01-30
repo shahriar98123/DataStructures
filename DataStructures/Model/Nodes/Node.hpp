@@ -2,25 +2,30 @@
 //  Node.hpp
 //  DataStructures
 //
-//  Created by Shams, Shahriar on 1/28/19.
+//  Created by Shams, Shahriar on 1/30/19.
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#ifndef Node_h
-#define Node_h
-
+#ifndef Node_hpp
+#define Node_hpp
 
 #include <assert.h>
+
 template <class Type>
 class Node
 {
 private:
-    type data;
+    Type data;
 public:
+    Node();
     Node(Type data);
     Type getData();
     void setData(Type data);
 };
+
+template <class Type>
+Node<Type> :: Node()
+{}
 
 template <class Type>
 Node<Type> :: Node(Type data)
@@ -33,11 +38,13 @@ Type Node<Type> :: getData()
 {
     return data;
 }
+
 template <class Type>
-Type Node<Type> :: setData(Type data)
+void Node<Type> :: setData(Type data)
 {
     this->data = data;
 }
 
 
-#endif /* Node_h */
+
+#endif /* Node_hpp */
