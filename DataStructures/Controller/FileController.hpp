@@ -16,7 +16,7 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <<stream>
+#include <sstream>
 
 class FileController
 {

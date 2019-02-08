@@ -32,6 +32,7 @@
 		1065FF2421FF8C13002D7E58 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		1065FF2521FF8C13002D7E58 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		1065FF2721FF8C25002D7E58 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		1092CBA7220E1B65008F30CC /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		10E8A346220A19A200638E7E /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		10E8A347220A19A200638E7E /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		10E8A34B220A1FD100638E7E /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 			children = (
 				1065FF1C21FF8BB8002D7E58 /* DataStructures */,
 				1065FF1B21FF8BB8002D7E58 /* Products */,
+				10E8A357220A26D700638E7E /* Diagrams */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +89,8 @@
 		1065FF2921FF8C3F002D7E58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				10FD594A22023C8600DBBBA9 /* Linear */,
 				10FD59452202269600DBBBA9 /* Nodes */,
+				10FD594A22023C8600DBBBA9 /* Linear */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +131,14 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		10E8A357220A26D700638E7E /* Diagrams */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Diagrams;
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		10FD59452202269600DBBBA9 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				10FD59492202397700DBBBA9 /* Array.hpp */,
+				1092CBA7220E1B65008F30CC /* List.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";

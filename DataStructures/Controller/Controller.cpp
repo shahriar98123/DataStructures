@@ -7,6 +7,7 @@
 //
 
 #include "Controller.hpp"
+#include "FileController.hpp"
 
 void Controller :: start()
 {
@@ -16,10 +17,20 @@ void Controller :: start()
 
 void Controller :: usingNodes ()
 {
-    Node<int> mine(50);
-    Node<string> wordHolder("words can be stored too");
+    LinearNode<int> mine(50);
+    LinearNode<string> wordHolder("words can be stored too");
     cout << mine.getData() << endl;
     cout << wordHolder.getData() << endl;
     wordHolder.setData("replaced text");
     cout << wordHolder.getData()<< endl;
+}
+void Controller :: testFiles()
+{
+    vector<Music> musicVector = FileController :: musicDataToVector("Users/ssha7332/Documents/C++ Projects/DatamemberProj/DatamemberProj/Resources/Music.hpp");
+    for(int index = 234; index ==255; index++)
+    {
+        cout << index<< ": contents are: " << musicVector[index]<< endl;
+    }
+    vector<CrimeData> crimeVector = FileController :: readCrimeDataToVector("/Users/ssha7332/Documents/C++)
+    
 }
