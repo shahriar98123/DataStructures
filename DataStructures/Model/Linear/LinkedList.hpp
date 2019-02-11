@@ -9,7 +9,7 @@
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
-#include <iostream>
+#include <List.hpp>
 
 using namespace std;
 
@@ -147,6 +147,7 @@ LinkedList<Type> :: LinkedList()
             }
         }
         this->size -= 1;
+        
         removeData = toBeRemoved->getData();
         delete toBeRemoved;
         return removeData;
@@ -163,6 +164,24 @@ LinkedList<Type> :: LinkedList()
     {
         return this->size;
     }
+}
+
+template <class Type>
+bool LinkedList<Type> :: contains(Type thingToFind)
+{
+    bool exists = false;
+    LinearNode<Type> * searchPointer = front;
+    
+    for (int index = 0; index < getSize(); index++)
+    {
+        if (searchPointer->getData() == thingToFind)
+        {
+            return true;
+        }
+        searchPointer = searchPointer->getNextNode();
+    }
+    
+    return exists;
 }
 
 #endif /* LinkedList_hpp */

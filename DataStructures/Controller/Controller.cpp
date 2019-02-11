@@ -13,6 +13,7 @@ void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
     usingNodes();
+    testFiles();
 }
 
 void Controller :: usingNodes ()
@@ -26,11 +27,15 @@ void Controller :: usingNodes ()
 }
 void Controller :: testFiles()
 {
-    vector<Music> musicVector = FileController :: musicDataToVector("Users/ssha7332/Documents/C++ Projects/DatamemberProj/DatamemberProj/Resources/Music.hpp");
-    for(int index = 234; index ==255; index++)
+    vector<Music> musicVector = FileController :: musicDataToVector("/Users/ssha7332/Documents/C++/DataStructures/DataStructures/Resources/music.csv");
+    for(int index = 234; index < 255; index++)
     {
         cout << index<< ": contents are: " << musicVector[index]<< endl;
     }
-    vector<CrimeData> crimeVector = FileController :: readCrimeDataToVector("/Users/ssha7332/Documents/C++)
+    vector<CrimeData> crimeVector = FileController :: readCrimeDataToVector("/Users/ssha7332/Documents/C++/DataStructures/DataStructures/Resources/crime.csv");
+    for(int index = 234; index < 255; index++)
+    {cout << index << ": contents are: " << crimeVector[index]<< endl;}
     
 }
+    
+                                                                
