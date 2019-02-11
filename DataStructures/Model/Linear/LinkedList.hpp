@@ -184,4 +184,9 @@ bool LinkedList<Type> :: contains(Type thingToFind)
     return exists;
 }
 
+virtual void add(Type item);
+virtual void addAtIndex(int index, Type item);
+virtual Type getFromIndex(int index);
+virtual Type remove(int index);
+
 #endif /* LinkedList_hpp */

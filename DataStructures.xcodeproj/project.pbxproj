@@ -31,6 +31,7 @@
 		101BF6C62212077B0039BA97 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		101BF6C8221207A50039BA97 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		101BF6CA22120DF70039BA97 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		101BF6CD221211C70039BA97 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		1065FF1A21FF8BB8002D7E58 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		1065FF2421FF8C13002D7E58 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		1065FF2521FF8C13002D7E58 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 				1092CBA7220E1B65008F30CC /* List.hpp */,
 				1092CBAA220E1C9A008F30CC /* LinkedList.hpp */,
 				101BF6CA22120DF70039BA97 /* Queue.hpp */,
+				101BF6CD221211C70039BA97 /* Stack.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
