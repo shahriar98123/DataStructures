@@ -103,6 +103,8 @@ public:
         assert(index == 0);
         return peek();
     }
+    
+    
 }
 
 #endif /* Stack_hpp */
