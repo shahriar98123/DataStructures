@@ -8,11 +8,10 @@
 
 #ifndef Music_hpp
 #define Music_hpp
-
+#include <iostream>
 #include <string>
 #include <cmath>
 #include <sstream> //String as stream
-using namespace std;
 class Music
 {
 private:

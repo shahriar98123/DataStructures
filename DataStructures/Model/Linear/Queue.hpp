@@ -10,16 +10,18 @@
 #define Queue_hpp
 
 #include <iostream>
+#include <assert.h>
 using namespace std;
 
 template <class Type>
 class Queue : public LinkedList<Type>
+{
 
 public:
 Queue();
 ~Queue();
 
-void enqueue(type data);
+    void enqueue(Type data);
 Type dequeue();
 Type peek();
 void clear();

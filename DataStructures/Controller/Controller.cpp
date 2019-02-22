@@ -7,13 +7,11 @@
 //
 
 #include "Controller.hpp"
-#include "FileController.hpp"
 
 void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
-    usingNodes();
-    testFiles();
+    testLinear
 }
 
 void Controller :: usingNodes ()
@@ -25,16 +23,11 @@ void Controller :: usingNodes ()
     wordHolder.setData("replaced text");
     cout << wordHolder.getData()<< endl;
 }
-void Controller :: testFiles()
+
+void Controller :: testLinear()
 {
-    vector<Music> musicVector = FileController :: musicDataToVector("/Users/ssha7332/Documents/C++/DataStructures/DataStructures/Resources/music.csv");
-    for(int index = 234; index < 255; index++)
-    {
-        cout << index<< ": contents are: " << musicVector[index]<< endl;
-    }
-    vector<CrimeData> crimeVector = FileController :: readCrimeDataToVector("/Users/ssha7332/Documents/C++/DataStructures/DataStructures/Resources/crime.csv");
-    for(int index = 234; index < 255; index++)
-    {cout << index << ": contents are: " << crimeVector[index]<< endl;}
+    LinearTester lookieHere
+    lookieHere.testVsSTL();
     
 }
     

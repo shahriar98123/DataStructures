@@ -34,7 +34,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setatIndex(int index, Type data);
-}
+};
 
 template <class Type>
 Array<Type> :: Array(int size)
@@ -55,7 +55,7 @@ Array<Type> :: Array(const Array<Type> & toCopy)
     for(int index = 0; index < size; index++)
     {
         internalArray[index] = toCopy[index];
-    }
+    };
     template <class Type>
     Array<Type :: ~Array()
     {
@@ -111,7 +111,7 @@ Type Array<Type> :: getFromIndex(int index)
 }
 
 template <class Type>
-void Array<Type> :: setAtIndex(int pos, Type item)
+void Array<Type> :: setatIndex(int pos, Type item)
 {
     assert(pos >= 0 && pos < size);
     internalArray[pos] = item;

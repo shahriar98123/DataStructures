@@ -9,28 +9,32 @@
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
-#include <List.hpp>
-
+#include "List.hpp"
+#include <iostream>
+#include "LinearNode.hpp"
+#include <assert.h>
 using namespace std;
 
 template <class Type>
 class LinkedList : public List<Type>
+{
 
 protected:
-LinearNode<Type> * front;
-LinearNode<Type> * end;
+    LinearNode<Type> * front;
+    LinearNode<Type> * end;
 
 public:
 LinkedList();
 virtual ~LinkedList();
-int getSize() const;
+virtual int getSize() const;
 LinearNode<Type> * getFront();
 LinearNode<Type> * getEnd();
+    
 
-void add(Type item);
-void addAtIndex(int index, Type item);
-Type getFromIndex(int index);
-Type remove(int index);
+virtual void add(Type item);
+virtual void addAtIndex(int index, Type item);
+virtual Type getFromIndex(int index);
+virtual Type remove(int index);
 
 LinkedList<Type> :: LinkedList()
 {
@@ -166,7 +170,6 @@ LinkedList<Type> :: LinkedList()
     }
 }
 
-template <class Type>
 bool LinkedList<Type> :: contains(Type thingToFind)
 {
     bool exists = false;
@@ -183,10 +186,5 @@ bool LinkedList<Type> :: contains(Type thingToFind)
     
     return exists;
 }
-
-virtual void add(Type item);
-virtual void addAtIndex(int index, Type item);
-virtual Type getFromIndex(int index);
-virtual Type remove(int index);
 
 #endif /* LinkedList_hpp */

@@ -11,6 +11,8 @@
 
 #include "LinkedList.hpp"
 
+#include <iostream>
+
 template <class Type>
 class Stack : public LinkedList<Type>
 {
@@ -105,6 +107,6 @@ public:
     }
     
     
-}
+};
 
 #endif /* Stack_hpp */

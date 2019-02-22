@@ -10,19 +10,29 @@
 #define FileController_hpp
 
 
-#include "../Resources/Music.hpp"
-#include <string>
-#include "../Resources/CrimeData.hpp"
-#include <fstream>
 #include <iostream>
-#include <vector>
+#include <fstream>
 #include <sstream>
+#include <string>
+#include <vector>
+#include "../Model/Linear/Array.hpp"
+#include "../Model/Linear/LinkedList.hpp"
+#include <assert.h>
+#include <iostream>
+
+#include "../Resources/CrimeData.hpp"
+#include "../Resources/Music.hpp"
+
+using namespace std;
 
 class FileController
 {
 
 public:
-static vector<CrimeData> readCrimeDataToVector(string filename);
-static vector<Music> musicDataToVector(string filename);
+    static Array<Music> musicDataToArray(string filename);
+    static LinkedList<Music> musicDataToList(string filename);
+    static vector<CrimeData> readCrimeDataToVector(string filename);
+    static LinkedList<CrimeData> readDataToList(string filename);
+    static vector<Music> musicDataToVector(string filename);
 };
 #endif /* FileController_hpp */
