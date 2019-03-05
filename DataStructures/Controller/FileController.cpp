@@ -76,7 +76,7 @@ vector<Music> FileController :: musicDataToVector(string filename)
         cerr << "NO FILE" << endl;
     }
     
-    return musicVector;
+    return musicVector;]
     
     LinkedList<CrimeData> FileController :: readDataToList(string filename)
     {
