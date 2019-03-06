@@ -35,23 +35,23 @@ virtual void add(Type item);
 virtual void addAtIndex(int index, Type item);
 virtual Type getFromIndex(int index);
 virtual Type remove(int index);
-
+};
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
     this->end = nullptr;
     this->size = 0;
-    
-    LinkedList<Type> :: ~LinkedList()
+}
+LinkedList<Type> :: ~LinkedList()
+{
+    LinearNode<Type> * destroyStructure = front;
+    while (front != nullptr)
     {
-        LinearNode<Type> * destroyStructure = front;
-        while (front != nullptr)
-        {
-            front = destroyStructure->getNextNode();
-            delete destroyStructure;
-            destroyStructure = front;
-        }
+        front = destroyStructure->getNextNode();
+        delete destroyStructure;
+        destroyStructure = front;
     }
+}
     void LinkedList<Type> :: add(Type item)
     {
         LinearNode<Type> * newData = new LinearNode<Type>(item);
@@ -186,5 +186,6 @@ bool LinkedList<Type> :: contains(Type thingToFind)
     
     return exists;
 }
+};
 
 #endif /* LinkedList_hpp */
