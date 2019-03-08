@@ -61,7 +61,7 @@ Queue<Type> :: ~Queue()
         
         this->end = added;
         this->size++;
-            }
+    };
     
     template <class Type>
     void Queue<Type> :: addAtIndex(int index, Type item)
@@ -90,7 +90,7 @@ Queue<Type> :: ~Queue()
         this->size = this->size -1;
         
         return returned;
-    }
+    };
     
     template <class Type>
     Type Queue<Type> :: remove(int index)
@@ -118,7 +118,7 @@ Queue<Type> :: ~Queue()
     {
         assert(index == 0);
         return peek();
-    }
+    };
 }
 
 #endif /* Queue_hpp */
