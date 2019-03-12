@@ -119,6 +119,5 @@ Queue<Type> :: ~Queue()
         assert(index == 0);
         return peek();
     };
-}
-
+};
 #endif /* Queue_hpp */
