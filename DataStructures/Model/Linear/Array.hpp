@@ -55,12 +55,12 @@ Array<Type> :: Array(const Array<Type> & toCopy)
     for(int index = 0; index < size; index++)
     {
         internalArray[index] = toCopy[index];
-    };
-    template <class Type>
-    Array<Type :: ~Array()
-    {
-        delete [] internalArray;
     }
+}
+template <class Type>
+Array<Type :: ~Array()
+{
+    delete [] internalArray;
 }
 
 template <class Type>
@@ -104,7 +104,7 @@ int Array<Type> :: getSize() const
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
-    assert(index >= && index < size);
+    assert(index >=0 && index < size);
     Type value = internalArray[index];
     
     return value;
