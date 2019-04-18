@@ -51,7 +51,7 @@ void LinearTester :: testVsSTL()
     crimes[randomIndex];
     crimeTimerSTL.stopTimer();
     
-    crimeTimeOOP.startTimer();
+    crimeTimerOOP.startTimer();
     moreCrimes.getFromIndex(randomIndex);
     crimeTimerOOP.stopTimer();
     
@@ -60,7 +60,7 @@ void LinearTester :: testVsSTL()
     crimeTimerOOP.displayInformation();
     cout << "A difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerSTL.getTimeInMicroseconds() << "microseconds" << endl;
     
-    randonIndex = rand() % musicList.getSize();
+    randomIndex = rand() % musicList.getSize();
     
     musicSTL.startTimer();
     tunez[randomIndex];

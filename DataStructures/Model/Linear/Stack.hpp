@@ -26,9 +26,9 @@ public:
     
     void add(Type data);
     void addAtIndex(int index, Type data);
-    Type getFromINdex(int index);
+    Type getFromIndex(int index);
     Type remove(int index);
-    
+};
     template <class Type>
     Stack<Type> :: Stack() : LinkedList<Type>()
     {
@@ -105,8 +105,6 @@ public:
         assert(index == 0);
         return peek();
     }
-    
-    
-};
+
 
 #endif /* Stack_hpp */

@@ -58,7 +58,7 @@ Array<Type> :: Array(const Array<Type> & toCopy)
     }
 }
 template <class Type>
-Array<Type :: ~Array()
+Array<Type> :: ~Array()
 {
     delete [] internalArray;
 }
@@ -66,7 +66,7 @@ Array<Type :: ~Array()
 template <class Type>
 Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
 {
-    if (&toAssign) != this)
+    if (&toAssign != this)
     {
         if (size != toAssign.getSize())
         {

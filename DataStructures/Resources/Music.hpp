@@ -16,9 +16,9 @@ class Music
 {
 private:
     double artist_hotttnesss;
-    string artist_id;
-    string artist_name;
-    string artist_mbtags;
+    std::string artist_id;
+    std::string artist_name;
+    std::string artist_mbtags;
     double artist_mbtags_count;
     double bars_confidence;
     double bars_start;
@@ -30,35 +30,35 @@ private:
     int key;
     double key_confidence;
     double latitude;
-    string location;
+    std::string location;
     double longitude;
     double loudness;
     int mode;
     double mode_confidence;
     int release_id;
-    string release_name;
-    string similar;
+    std::string release_name;
+    std::string similar;
     double song_hotttnesss;
-    string song_id;
+    std::string song_id;
     double start_of_fade_out;
     double tatums_confidence;
     double tatums_start;
     double tempo;
-    string terms;
+    std::string terms;
     double terms_freq;
     int time_signature;
     double time_signature_confidence;
-    string title;
+    std::string title;
     int year;
     
 public:
     Music();
-    Music(string data);
+    Music(std::string data);
     //Getters
     double getArtist_hotttnesss() const;
-    string getArtist_id() const;
-    string getArtist_name() const;
-    string getArtist_mbtags() const;
+    std::string getArtist_id() const;
+    std::string getArtist_name() const;
+    std::string getArtist_mbtags() const;
     double getArtist_mbtags_count() const;
     double getBars_confidence() const;
     double getBars_start() const;
@@ -70,32 +70,32 @@ public:
     int getKey() const;
     double getKey_confidence() const;
     double getLatitude() const;
-    string getLocation() const;
+    std::string getLocation() const;
     double getLongitude() const;
     double getLoudness() const;
     int getMode() const;
     double getMode_confidence() const;
     int getRelease_id() const;
-    string getRelease_name() const;
-    string getSimilar() const;
+    std::string getRelease_name() const;
+    std::string getSimilar() const;
     double getSong_hotttnesss() const;
-    string getSong_id() const;
+    std::string getSong_id() const;
     double getStart_of_fade_out() const;
     double getTatums_confidence() const;
     double getTatums_start() const;
     double getTempo() const;
-    string getTerms() const;
+    std::string getTerms() const;
     double getTerms_freq() const;
     int getTime_signature() const;
     double getTime_signature_confidence() const;
-    string getTitle() const;
+    std::string getTitle() const;
     int getYear() const;
     
     bool operator == (const Music & compared);
     bool operator < (const Music & other);
     bool operator > (const Music & other);
     
-    friend ostream & operator << (ostream & outputStream, const Music & outputData);
+    friend std::ostream & operator << (std::ostream & outputStream, const Music & outputData);
 };
 
 
